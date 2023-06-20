@@ -26,8 +26,8 @@ read SITE_URL
 ##################################################################
 TIMEZONE='Africa/Nairobi'
 FRAPPE_USR='frappe'
-FRAPPE_BRANCH='version-13'
-ERPNEXT_BRANCH='version-13'
+FRAPPE_BRANCH='version-14'
+ERPNEXT_BRANCH='version-14'
 
 SRVR_ADDR=`curl -s -4 ifconfig.co`
 SITE_ADDR=`dig +short $SITE_URL`
@@ -44,8 +44,8 @@ SERVER_VER=`/usr/bin/lsb_release -ds| awk '{print $2}' | cut -d. -f1,2`
 [[ $EUID -ne 0 ]] && echo -e "\033[0;31m \n>\n> Error: You MUST be root user to run this script! \n>\n\033[0m" && exit 1
 
 
-# Check if the installed OS is ubuntu 20.14. Exit if not
-[[ $SERVER_OS != 'Ubuntu' || $SERVER_VER != '20.04' ]] && echo -e "\033[0;31m \n>\n> Error: This script is made for Ubuntu 20.04 \n>\n\033[0m" && exit 1
+# Check if the installed OS is ubuntu 22.04. Exit if not
+[[ $SERVER_OS != 'Ubuntu' || $SERVER_VER != '22.04' ]] && echo -e "\033[0;31m \n>\n> Error: This script is made for Ubuntu 22.04 \n>\n\033[0m" && exit 1
 
 
 # Check if user has defined bench user password. Exit if not
