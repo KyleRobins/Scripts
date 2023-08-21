@@ -1,7 +1,7 @@
 #!/bin/bash
 ################################################################################
 # Script for installing OpenHRMS on Ubuntu 14.04, 15.04, 16.04 and 18.04 (could be used for other version too)
-# Author: Cybrosys Technologies
+# Author: KyleRobins
 #-------------------------------------------------------------------------------
 # This script will install Odoo on your Ubuntu 16.04 server. It can install multiple Odoo instances
 # in one Ubuntu because of the different xmlrpc_ports
